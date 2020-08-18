@@ -1,5 +1,5 @@
 # ToDo-List-App
-Made a Todo App using Vanilla JS and Bootstrap.
+ToDo List App using Vanilla JS and Bootstrap.
 
 View on - https://joysamaddar.github.io/ToDo-List-App/
 
