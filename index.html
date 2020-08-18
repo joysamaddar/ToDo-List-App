@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css"
+      integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>
+      ToDo List
+    </title>
+  </head>
+  <body>
+    <div class="filter bg-info d-inline-block">
+      <i class="fas fa-filter"></i>
+    </div>
+    <div class="filter-container closefilter">
+      <div class="filter-content">
+        <i class="fas closeFilterIcon fa-times"></i>
+        <button type="button" class="btn allbtn btn-primary">All</button>
+        <button type="button" class="btn incompletebtn btn-info">
+          incomplete
+        </button>
+        <button type="button" class="btn completebtn btn-success">
+          complete
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <a href="./">
+        <h1 class="text-center font-weight-bold mt-5 text-info">
+          ToDo List
+        </h1></a
+      >
+      <form action="" class="">
+        <div
+          class="form-group d-flex justify-content-center align-items-center mt-5"
+        >
+          <input
+            id="todo-input"
+            type="text"
+            class="form-control"
+            placeholder="Add task..."
+          />
+        </div>
+        <button id="todo-submit" type="submit" class="btn btn-block btn-info">
+          Add
+        </button>
+      </form>
+      <div
+        class="tasks container flex-wrap mt-2 d-flex justify-content-center align-items-center"
+      ></div>
+    </div>
+
+    <footer class="d-flex justify-content-center align-items-flex-center">
+      <p>Coded with <i class="fas text-danger fa-heart"></i> by Joy</p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

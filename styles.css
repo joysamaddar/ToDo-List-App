@@ -1,0 +1,135 @@
+body {
+  backgroud: rgb(255, 255, 255);
+  position: relative;
+}
+
+.tasks .container {
+  max-width: 100%;
+}
+
+.tasks button {
+  padding: 1.35rem;
+  margin: 0 1rem;
+}
+
+.task-card {
+  width: 100%;
+}
+
+.task-card:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.tasks button:first-of-type {
+  margin-right: 0;
+}
+
+.card-body {
+  min-width: 60vw;
+}
+
+i {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+footer {
+  position: absolute;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgb(240, 240, 240);
+}
+
+footer p {
+  transform: translate(0px, 50%);
+}
+
+.alert {
+  animation: alert 0.5s;
+}
+
+.task-card {
+  animation: taskcard 0.55s;
+}
+
+@keyframes alert {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes taskcard {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.filter {
+  padding: 1.3rem 1.3rem;
+  background: rgb(240, 240, 240);
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -100%);
+  left: 0;
+  cursor: pointer;
+}
+
+.fa-filter {
+  transform: translate(-25%, 0);
+  color: rgb(255, 255, 255);
+}
+
+.filter-container {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.733);
+  z-index: 3;
+  transform: translate(0, -48px);
+}
+
+.filter-content {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7% 20%;
+  position: relative;
+}
+
+.filter-content .btn {
+  margin-top: 2rem;
+}
+
+.filter-content .btn:first-of-type {
+  margin-top: 0;
+}
+
+.task-card {
+  display: flex;
+}
+
+.closeFilterIcon {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  transform: translate(0, 25%);
+  font-size: 1.4rem;
+  cursor: pointer !important;
+  pointer-events: all;
+  color: rgb(34, 34, 34);
+}
