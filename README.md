@@ -8,4 +8,5 @@ Features:
 2. Check tasks that are done.
 3. Filter tasks.
 4. Local Storage functionality.
+5. Used classes and objects for the project
 
