@@ -83,6 +83,7 @@ footer p {
   transform: translate(0, -100%);
   left: 0;
   cursor: pointer;
+  z-index: 999;
 }
 
 .fa-filter {
@@ -132,4 +133,19 @@ footer p {
   cursor: pointer !important;
   pointer-events: all;
   color: rgb(34, 34, 34);
+}
+
+@media only screen and (max-width: 650px) {
+  .filter {
+    top: 0;
+    transform: translate(0, 0);
+    left: 80%;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .fa-filter {
+    transform: translate(0%, 0);
+    color: rgb(255, 255, 255);
+  }
 }
