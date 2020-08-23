@@ -1,5 +1,5 @@
 body {
-  backgroud: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -26,6 +26,7 @@ body {
 
 .card-body {
   min-width: 60vw;
+  pointer-events: none;
 }
 
 i {
